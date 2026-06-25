@@ -1,0 +1,135 @@
+---
+title: "Teamwork Reflection : Ssemakula Peter Wasswa"
+format: typst
+---
+
+# Capstone Reflection
+
+The purpose of this individual report is to give you an avenue to present your viewpoint as to how the capstone project went, how the group worked together, and your role in the group. Each group member must complete this form to report on the contributions of **yourself** and the other group members. That information can, if needed, be used to adjust final grades of individuals. This is a private report, meaning that none of your classmates will see this report.
+
+## Ratings
+
+**Preparation.** Prepared for group meetings and presentations; spent time becoming familiar with the material relevant for the project; understood the project's goal and expectations; did what they said they would do on time; attended and was on time to group meetings and presentations.
+
+| Group member name | Preparation rating |
+|-------------------|--------------------|
+| Peter Ssemakula Wasswa | 4 |
+| Nour Shawky | 4 |
+| Sarah Gauthier | 4 |
+| Mehmet Imga | 4 |
+
+**Participation & communication.** Articulated ideas effectively when speaking or writing; work was clear and readable; listened to others; encouraged others to talk.
+
+| Group member name | Participation & communication rating |
+|-------------------|--------------------------------------|
+| Peter Ssemakula Wasswa | 4 |
+| Nour Shawky | 4 |
+| Sarah Gauthier | 4 |
+| Mehmet Imga | 4 |
+
+**Helps group excel.** Expressed interest in group success by evaluating ideas and suggestions; initiated problem solving; encouraged high standards; looked for stronger ideas; stayed motivated throughout the project.
+
+| Group member name | Helps group excel rating |
+|-------------------|--------------------------|
+| Peter Ssemakula Wasswa | 4 |
+| Nour Shawky | 4 |
+| Sarah Gauthier | 4 |
+| Mehmet Imga | 4 |
+
+**Team player (cooperation).** Knew when to be a leader and a follower; kept an open mind; compromised when appropriate; accepted criticism; respected others.
+
+| Group member name | Team player (cooperation) rating |
+|-------------------|----------------------------------|
+| Peter Ssemakula Wasswa | 4 |
+| Nour Shawky | 4 |
+| Sarah Gauthier | 4 |
+| Mehmet Imga | 4 |
+
+## Contributions
+
+Overall, the team worked well together. The project had many moving parts, including data cleaning, exploratory analysis, VLM prompting, embedding-based modelling, final pipeline development, documentation, and report writing. Different team members took ownership of different technical areas, and the final project benefited from having those responsibilities distributed across the group. We also iterated frequently on documentation, Makefile commands, report sections, model evaluation, and final deliverables.
+
+### My role:  Ssemakula Peter Wasswa
+
+My main role was focused on the embedding-based classification approach. I worked on the DINOv3-based modelling pipeline, where frozen DINOv3 image embeddings were used with lightweight classifiers such as logistic regression, linear SVM, random forest, and gradient boosting. I helped compare these models against the baseline and later against other embedding models such as SigLIP and OpenCLIP.
+
+I also contributed to the final report sections related to embedding-based classification, including explaining the motivation for using frozen vision embeddings, grouped cross-validation, weighted F1, and why DINOv3 plus logistic regression was selected as the strongest final approach. Later in the project, I worked on improving the final production-style pipeline by helping add saved final classifiers, model bundle documentation, script docstrings, notebook introductions, and clearer runbook explanations so that the project could be rerun and understood by supervisors or future users.
+
+Specific contributions included:
+
+- Implemented and documented embedding-based classification workflows.
+- Ran DINOv3 experiments across the project attributes and compared classifiers.
+- Explored SigLIP and OpenCLIP as alternative embedding models.
+- Helped organize prediction outputs and model comparison results.
+- Added and revised the embedding-based classification section of the final report.
+- Added references and wording around weighted F1 due to class imbalance.
+- Helped improve the final pipeline so trained sklearn classifiers could be saved and reused.
+- Improved documentation, script docstrings, notebook introductions, and the final pipeline runbook.
+
+### Nour Shawky
+
+Nour made major contributions across data processing, EDA, modelling results, visualization, and report integration.Nour contributed heavily to the data exploration notebook, processed train/test data generation, binned numerical attributes, model result regeneration, plotting scripts, and final report organization.
+
+Nour also worked on comparing model results, regenerating plots, correcting result summaries, updating report figures, and writing or refining major final report sections such as the VLM approach, conclusion, recommendations, and report structure. Nour’s contributions were important for connecting the modelling work to clear visual evidence and final report conclusions.
+
+Specific contributions included:
+
+- Data cleaning and exploratory data analysis.
+- Processed data generation and train/test organization.
+- Model comparison plots and report figures.
+- VLM approach write-up and final report sections.
+- Test-set result generation and visualization.
+- Report organization, rendering, and final structure.
+- Fixes to prediction scripts and pipeline outputs.
+
+### Sarah Gauthier
+
+Sarah contributed to project setup, README and repository organization, VLM exploration, prompt-related work, report drafting, and integration through pull requests. Sarah was active in README updates, DINOv3 download instructions, VLM updates, raw data folder setup, report introduction/data-product content, prompt updates, and merging/reviewing several branches.
+
+Sarah’s work helped make the project easier to navigate and helped connect the technical work to the partner-facing data product. She also contributed to the VLM side of the project and helped keep documentation and repository structure usable for the team.
+
+Specific contributions included:
+
+- README and repository structure updates.
+- DINOv3 setup/download instructions.
+- VLM exploration and prompt-related updates.
+- Report introduction and data product sections.
+- Project documentation and merge/review work.
+- Supporting final report and presentation readiness.
+
+### Mehmet Imga
+
+Mehmet contributed strongly to engineering infrastructure, baseline modelling, MLflow support, CityWide API integration, Makefile improvements, final pipeline development, tests, and documentation. Mehmet added majority-class baselines, MLflow scaffolding and tests, CityWide downloader/runbooks, the software installation guide, final pipeline runbook improvements, timing utilities, attribute applicability logic, new-image prediction improvements, and partner-deliverable export logic.
+
+Mehmet’s contributions were especially important for making the project reproducible and usable as a software pipeline rather than only a set of experiments. His work helped turn the project into something that could be run through Makefile commands and documented for future users.
+
+Specific contributions included:
+
+- Baseline model implementation and tests.
+- MLflow setup and related tests.
+- CityWide API client/downloader and documentation.
+- Makefile pipeline design and timing utilities.
+- Attribute applicability logic for final predictions.
+- New-image prediction functionality.
+- Installation guide, runbooks, and reproducibility documentation.
+- Executive summary and final report updates.
+
+## What Went Well
+
+The biggest strength of the team was that we divided the work into complementary areas. Different members owned different parts of the project, but the pieces eventually came together into a full pipeline: data preparation, baseline modelling, VLM experiments, embedding-based models, comparison figures, final prediction exports, and documentation.
+
+The team also responded well to feedback. For example, we shifted emphasis toward weighted F1 because class imbalance made accuracy less informative. We also improved documentation and pipeline usability after realizing that future users and supervisors needed clearer instructions on how the project runs from start to finish.
+
+Another thing that went well was the technical depth of the project. We did not only train one model; we compared baselines, DINOv3, SigLIP, OpenCLIP, VLM approaches, and multiple classifiers. This made the final recommendation more defensible.
+
+## What Went Poorly or Was Challenging
+
+One challenge was that the project became technically complex. There were many scripts, result folders, model variants, and pipeline steps. This made documentation and reproducibility harder than expected. Near the end, we had to spend significant time cleaning up runbooks, Makefile behavior, saved models, prediction outputs, and explanations of how the pipeline should be used.
+
+Another challenge was compute time. Embedding extraction and model runs could take a long time, especially when processing all images. This affected demos and made it important to distinguish between a full reproducible pipeline and a faster demo or handoff workflow.
+
+We also had some late-stage integration issues, such as making sure final saved classifiers, embeddings, and prediction outputs were being reused correctly rather than recomputed unnecessarily. These were solvable, but they showed that pipeline design needed as much care as model development.
+
+## Partner Engagement Feedback
+
+The BC Parks partner provided a meaningful and realistic problem, along with useful context about the importance of infrastructure asset attributes. The project felt valuable because it connected computer vision modelling to a real operational need. The partner’s involvement helped keep the project grounded in practical deliverables, such as confidence-scored attribute predictions and outputs that could support asset inventory workflows.

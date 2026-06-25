@@ -21,9 +21,6 @@ def get_arguments()->  argparse.Namespace:
    
 
 def main():
-    
-
-    
     print(f"{get_arguments().model}")
     
     
